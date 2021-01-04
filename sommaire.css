@@ -1,0 +1,12 @@
+body{
+    background-color:rgb(178, 179, 187);
+}
+h1{
+    color: rgb(7, 7, 110);
+    font-size: 40px;
+}
+h3{
+    font-style: italic;
+    color: black;
+    font-size: 30px;
+}

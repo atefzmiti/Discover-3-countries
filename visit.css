@@ -1,0 +1,73 @@
+h1{
+    background-color: rgb(168, 33, 168);
+}
+
+h2{
+    color:rgb(5, 4, 92);
+}
+h4{
+    color: rgb(158, 138, 22);
+}
+.p1{
+    line-height:1.7em ;
+}
+.leftside {
+    height: 100vh;
+    width: 70%;
+
+}
+.rightside{
+    height: 100vh;
+    width: 20%;}
+
+#fond{
+    position: relative;
+    top : 30px;
+    
+}
+#netherlands{
+    position: relative;
+    left: 120px;
+}
+#carte{
+    position: relative;
+    left: 120px;
+}
+#myid{
+    position: relative;
+    left: 50px;
+}
+#secondid{
+    position: relative;
+    right: 50px;
+}
+.myt{
+    border: 1px solid blue;
+}
+.mytd{border: 1px solid blue;}
+
+td.content { 
+    color:rgb(156, 96, 6);
+    border: 1px solid blue;
+
+}
+.line{border: 1px solid blue;}
+
+td.line { 
+    color:rgb(48, 115, 240);
+    border: 1px solid blue;
+}
+td.max{
+    color: rgb(184, 18, 18);
+    border: 1px solid blue;
+}
+td.min{
+    color: rgb(133, 18, 75);
+    border: 1px solid blue;
+}
+td.moy{
+    color: rgb(14, 200, 233);
+    border: 1px solid blue;
+}
+.mer{border: 1px solid blue;}
+.tempmer{border: 1px solid blue;}
