@@ -5,43 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="visit.css"/>
-
-    <title>Document</title>
-    <center><i> <script class="date">
-            today = new Date();
-            var Month = today.getMonth()+1;
-            document.write("Aujourd'hui c'est le "+today.getDate()+"/"+Month+"/"+today.getFullYear());
-            document.write(" ; l'heure c'est "+today.getHours()+":"+today.getMinutes()+":"+today.getSeconds());
-    </script></i></center>
-    <script>
-        alert("Salut, là vous allez découvrir les pays-bas :) ");
-    </script>
-    <script>
-        function verif(){
-            n=0;
-            taille = document.f.list.options.length;
-            for(i=0 ;i<taille;i++){
-                if(document.f.list[i].selected){n+=1;}
-            }
-            if(n<1){
-                alert("<b>Veuillez choisir une ville départ!</b>");
-            }
-            else if(n>1){
-                alert("<b>Veuillez choisir une seule ville départ!!</b>");
-            }
-        
-        }
-    </script>
-
+    <title>My first web project</title> 
 </head>
 <body>
-    <div id="fod">
+    <div class="d-flex justify-content-md-end" id="mydate" name="mydate">
+        <i> <script  id="firstscript">
+                today = new Date();
+                document.write("Aujourd'hui c'est le "+today.getDate()+"/"+today.getMonth()+1+"/"+today.getFullYear());
+                document.write(" ; l'heure c'est "+today.getHours()+":"+today.getMinutes()+":"+today.getSeconds());
+     </script></i></div> <br>
+     <div class="first" id="myfirstid">
+        <b>Salut, là vous allez découvrir les pays-bas :) </b>
+    </div>
+    <br>
+    <div id="fond">
     <img src="fond.jpg" height="700" width = "1300" >
     </div>
     <br><br>
-    <div class="row no-glutters">
-    <div class="col no-glutters" id="myid">
-        <div class="leftside">
+    <div class="row no-glutters" id="global">
+        <div class="leftside" id="myid">
     <h1><i>Historique des pays-bas </i></h1>
     <fieldset>
 <p class="p1">Peuplés de tribus celtes puis germaniques dont les Frisons et les Bataves, les Pays-Bas du Nord échappent ou résistent à la domination de l'Empire romain établi dans le Sud (→ histoire de la Belgique) et dont la frontière septentrionale est alors formée par le Rhin.</p>
@@ -211,7 +193,8 @@
                                 <img src="image8.jpg" height="400" width = "700">  
                                 </div>
                             <br><br> <div>
-                                <p class="p1">En plus de son haut de clocher remarquable, si vous visitez l’église Zuiderberk, vous y trouverez des expositions sur les projets urbains d’Amsterdam. </p> </div>
+                                <p class="p1">En plus de son haut de clocher remarquable, si vous visitez l’église Zuiderberk, vous y trouverez des expositions sur les projets urbains d’Amsterdam. </p> 
+                            </div>
                                     <div>
                                         <h4><b> <u>9. Voir un film au Théâtre Tuschinski</u></b></h4>
                                     </div>
@@ -221,7 +204,7 @@
                                         </div>
                                     <br><br> <div>
 <p class="p1">Pour voir un film, vous devrez compter entre 6 et 9€. Vous pourrez profiter des films récents des cinémas Pathé dans ce décor des années 20 !
- Les nostalgiques des Années Folles pourront aussi simplement visiter ce cinéma art déco datant de 1921. </p>
+ Les nostalgiques des Années Folles pourront aussi simplement visiter ce cinéma art déco datant de 1921. </p> </div>
            <div>
              <h4><b> <u>10. Visiter Delft</u></b></h4>
     </div>
@@ -233,7 +216,7 @@
      <div>
              <p class="p1"> Si vous visitez Amsterdam pendant plus d’un week-end, n’hésitez pas à sortir de la ville.
                Delft se situe à 50km d’Amsterdam, dans l’Ouest des Pays-Bas. Le charme de la ville c’est ses petites maisons datant du 17ème siècle et bien entendu, ses canaux. La ville de Delft est connue pour ses poteries bleues et blanches, peintes à la main. On parle même de la faïence de Delft.
-            </p>
+            </p> </div>
         <div> 
             <h1><i>Quand visiter les Pays-Bas</i></h1>
         </div> <br>
@@ -374,41 +357,63 @@
         
         Enfin, il y a peu de relief aux Pays-Bas, mais vous trouverez en dehors des villes, de grandes plaines et des pâturages qui sauront vous offrir de beaux panoramas à découvrir à pied. Au printemps, ces paysages s'embelliront des couleurs des nombreux champs de tulipes.</p></div>
         <br>
+        <div id="carte">
+            <img src="image 12.png" height="200" width = "700">  
+            </div>
+            <br>
         <div>
             <h4><b> <u>Budget et voyage</u></b></h4>
    </div>
    <br>
    <div>
-       <form name="f" method="POST" onsubmit="return verif()">
+       <form action="select.html" name="f" method="POST">
+    Aprés que vous choisirez votre ville de départ , vous allez étre redirigé vers un lien qui porte les détails de votre voyage
     <table>
         <tr>
             <td>Ville de départ :</td> 
             <td></td>
         </tr>
-            <tr>
-                <td></td>
-                    <td><select name = "list" multiple > 
-                        <option>Tunisie</option>
-                        <option>Belgique</option>
-                        <option>Allemagne</option>
-                        <option>France</option>
-                        <option>Argentine</option>
-                        <option>Panama</option>
-                        <option>eEgypt</option>
-                        <option>Emirates</option>
-                        </select> </td>
-            </tr>
-    </table>  <br>
-    <input type="submit" value="envoyer" >
-    </form> 
-
+        <tr>
+            <td></td>
+            <td><select name = "list" size="8" onChange="verif(this)"> 
+                        <option data-link ="https://www.alitalia.com/fr-tn/vols-de-tunisie-a-pays-bas">Tunisie</option>
+                        <option data-link ="https://www.kelbillet.com/bus/trajet/bus-belgique-pays-bas-p76-72.html">Belgique</option>
+                        <option data-link ="https://www.airfrance.tn/TN/fr/local/process/standardbooking/SearchAction.do?">Allemagne</option>
+                        <option data-link ="https://www.kayak.fr/explore/FDF-174cy/20210110,20210117">France</option>
+                        <option data-link ="https://www.aireuropa.com/fr-fr/offres-de-vols-de-argentine-vers-pays-bas">Argentine</option>
+                        <option data-link ="https://flights.etihad.com/fr/vols-de-australie-vers-pays-bas">Australie</option>
+                        <option data-link ="https://flights.aegeanair.com/fr/vols-de-egypte-a-pays-bas">Egypte</option>
+                        <option data-link ="https://www.skyscanner.fr/itineraires/nl/qa/pays-bas-a-qatar.html">Qatar</option>
+                </select> </td>
+        </tr>
+    </table> <br>
+        </form> 
 </div>
-   <br>  
+   <br>  <script type="text/javascript">
+    function verif(select){
+         window.location = select.options[select.selectedIndex].getAttribute('data-link');}
+         </script>
     </div>
-<div class="col no-glutters" id="secondid">  
-    <div class="rightside" > 
+    <div class="rightside" id="secondid" >   
+        <fieldset>      
+        <i><u><p id="demo"> Contact </p></u></i>
+        <p class="p2" id="demo">Si vous avez besoin plus de détails Contactez-nous sur :   
+        </p>
+        <p class="p2">Numero téléphone : +216 55 613 811
+        Adresse e-mail : zmitiatef@gmail.com
+        </p>
+    <script>
+        document.getElementById("demo").addEventListener("mouseover",mouseOver);
+        document.getElementById("demo").addEventListener("mouseout",mouseOut);
+        function mouseOver(){
+            document.getElementById("demo").style.color="rgb(133, 18, 75)";
+        }
+        function mouseOut(){
+            document.getElementById("demo").style.color="rgb(5, 4, 92)";
+        }
+    </script>
+    </fieldset>
     </div>
-</div>
 </div>
 </body>
 </html>
