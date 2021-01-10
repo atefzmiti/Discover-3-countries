@@ -1,9 +1,11 @@
+
 h1{
     background-color: rgb(168, 33, 168);
 }
 
 h2{
     color:rgb(5, 4, 92);
+    font-size: 25px;
 }
 h4{
     color: rgb(158, 138, 22);
@@ -13,12 +15,12 @@ h4{
 }
 .leftside {
     height: 100vh;
-    width: 70%;
+    width: 120%;
 
 }
 .rightside{
     height: 100vh;
-    width: 20%;}
+    width: 80%;}
 
 #fond{
     position: relative;
@@ -36,10 +38,6 @@ h4{
 #myid{
     position: relative;
     left: 50px;
-}
-#secondid{
-    position: relative;
-    right: 50px;
 }
 .myt{
     border: 1px solid blue;
@@ -71,3 +69,37 @@ td.moy{
 }
 .mer{border: 1px solid blue;}
 .tempmer{border: 1px solid blue;}
+.first{
+    font-size: 40px;
+    color: brown;
+}
+#mydate{
+font-weight: bold;
+font-size: 20px;
+color: rgb(0, 0, 0);
+}
+#myfirstid{
+    position: relative;
+    left: 30px;
+}
+#myid{
+    width: 800px;
+float: left;
+}
+#secondid{
+    margin-left: 900px;
+    bottom: 100px;
+}
+#global {    
+    width: 1300px;
+    }
+    .p2{
+        line-height:1.7em ;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    #demo{
+        font-weight: bold;
+        font-size: 30px;
+        color:rgb(5, 4, 92);
+    }
