@@ -3,16 +3,6 @@ h1 {
     background-color: rgb(105, 3, 54);
 }
 
-li {
-    display: inline-block;
-    cursor: pointer;
-}
-
-a {
-    color: rgb(167, 39, 114);
-    font-size: 150%;
-}
-
 h2 {
     color: rgb(0, 0, 0);
     font-size: 25px;
@@ -35,6 +25,10 @@ h4 {
 .rightside {
     height: 100vh;
     width: 80%;
+}
+
+#fond {
+    position: relative;
 }
 
 #netherlands {
@@ -132,6 +126,16 @@ td.moy {
 #secondid {
     margin-left: 900px;
     bottom: 100px;
+}
+
+li {
+    display: inline-block;
+    cursor: pointer;
+}
+
+a {
+    color: rgb(134, 29, 90);
+    font-size: 150%;
 }
 
 #global {

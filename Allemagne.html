@@ -10,23 +10,25 @@
 </head>
 
 <body>
-    <div class="d-flex justify-content-md-end" id="mydate" name="mydate">
-        <script id="firstscript">
-            today = new Date();
-            document.write("Aujourd'hui c'est le " + today.getDate() + "/" + today.getMonth() + 1 + "/" + today.getFullYear());
-            document.write(" • l'heure c'est " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds());
-            var today = new Date();
-            var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-            var dateTime = date + ' ' + time;
-        </script>
-    </div> <br>
-    <div class="first" id="myfirstid">
-        <b>Salut, là vous allez découvrir l'Allemagne :) </b>
-    </div>
+    <ul id="mypage">
+        <li id="mypage"><a href="sommaire.html">Accueil</a></li>
+        <li>.</li>
+        <li><a href="Allemagne.html">L'allemagne</a></li>
+        <li>.</li>
+        <li><a href="france.html">La france</a></li>
+        <li>.</li>
+        <li><a href="lespays-bas.html">Les pays-bas</a></li>
+        <div class="d-flex justify-content-md-end" id="mydate" name="mydate">
+            <script id="firstscript">
+                today = new Date();
+                document.write("Aujourd'hui c'est le " + today.getDate() + "/" + today.getMonth() + 1 + "/" + today.getFullYear());
+                document.write(" • l'heure c'est " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds());
+            </script>
+        </div>
+    </ul>
     <br>
     <div id="fond">
-        <img src="fonds.png" height="700" width="1300">
+        <img src="fondds.jpg" height="700" width="1500">
     </div>
     <br><br>
     <div class="row no-glutters" id="global">
@@ -333,7 +335,7 @@
                 </p>
             </div>
             <div>
-                <h1><i>Quand visiter les Pays-Bas</i></h1>
+                <h1><i>Quand visiter l'allemagne</i></h1>
             </div> <br>
             <div>
                 <h4><b> <u>Climat</u></b></h4>
